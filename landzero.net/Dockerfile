@@ -8,6 +8,8 @@ RUN yum -y update && \
     yum -y install nginx php72w-fpm php72w-gd php72w-mysql && \
     yum clean all
 
+RUN usermod -aG apache nginx
+
 ADD run-all.sh /
 ADD run-nginx.sh /
 

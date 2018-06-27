@@ -2,4 +2,4 @@
 
 chown -R apache:apache /var/www
 
-nginx -g 'daemon off;'
+exec nginx -g 'daemon off;'
